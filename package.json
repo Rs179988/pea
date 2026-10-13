@@ -1,0 +1,37 @@
+{
+  "name": "pea-protocol",
+  "version": "1.0.0",
+  "description": "Protocol & Distributed Systems Anything (PEA): Autonomous binary wire-protocol deconstruction, eBPF state-machine inference, and distributed ghost-node synthesis engine.",
+  "main": "dist/cli.js",
+  "bin": {
+    "pea": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/cli.js",
+    "test": "node --test dist/tests/*.test.js",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "protocol-engineering",
+    "ebpf",
+    "distributed-systems",
+    "state-machine",
+    "automata",
+    "packet-dissector",
+    "wire-protocol",
+    "ghost-node",
+    "mcp-server",
+    "reverse-engineering"
+  ],
+  "author": "Rs179988",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.0",
+    "commander": "^13.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.0",
+    "typescript": "^5.7.3"
+  }
+}
